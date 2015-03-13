@@ -34,6 +34,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="net.theroberson.sunshineapp.MainActivity" />
         </activity>
+        <provider
+            android:authorities="net.theroberson.sunshineapp"
+            android:name=".data.WeatherProvider" />
     </application>
 
 </manifest>
