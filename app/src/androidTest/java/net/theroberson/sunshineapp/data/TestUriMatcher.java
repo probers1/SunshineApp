@@ -15,9 +15,9 @@
  */
 package net.theroberson.sunshineapp.data;
 
-        import android.content.UriMatcher;
-        import android.net.Uri;
-        import android.test.AndroidTestCase;
+import android.content.UriMatcher;
+import android.net.Uri;
+import android.test.AndroidTestCase;
 
 /*
     Uncomment this class when you are ready to test your UriMatcher.  Note that this class utilizes

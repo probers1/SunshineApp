@@ -15,12 +15,12 @@
  */
 package net.theroberson.sunshineapp.data;
 
-import android.content.ContentValues;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.test.AndroidTestCase;
+        import android.content.ContentValues;
+        import android.database.Cursor;
+        import android.database.sqlite.SQLiteDatabase;
+        import android.test.AndroidTestCase;
 
-import java.util.HashSet;
+        import java.util.HashSet;
 
 public class TestDb extends AndroidTestCase {
 
@@ -44,6 +44,7 @@ public class TestDb extends AndroidTestCase {
         table.  Note that you will have to have chosen the same column names that I did in
         my solution for this test to compile, so if you haven't yet done that, this is
         a good time to change your column names to match mine.
+
         Note that this only tests that the Location table has the correct columns, since we
         give you the code for the weather table.  This test does not look at the
      */

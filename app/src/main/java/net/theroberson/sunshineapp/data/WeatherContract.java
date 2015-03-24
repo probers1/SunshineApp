@@ -15,11 +15,11 @@
  */
 package net.theroberson.sunshineapp.data;
 
-        import android.content.ContentResolver;
-        import android.content.ContentUris;
-        import android.net.Uri;
-        import android.provider.BaseColumns;
-        import android.text.format.Time;
+import android.content.ContentResolver;
+import android.content.ContentUris;
+import android.net.Uri;
+import android.provider.BaseColumns;
+import android.text.format.Time;
 
 /**
  * Defines table and column names for the weather database.
@@ -131,7 +131,7 @@ public class WeatherContract {
         }
 
         /*
-            Student: Fill in this buildWeatherLocation function
+            Student: This is the buildWeatherLocation function you filled in.
          */
         public static Uri buildWeatherLocation(String locationSetting) {
             return CONTENT_URI.buildUpon().appendPath(locationSetting).build();

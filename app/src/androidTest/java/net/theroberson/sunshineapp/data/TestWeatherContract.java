@@ -15,8 +15,8 @@
  */
 package net.theroberson.sunshineapp.data;
 
-        import android.net.Uri;
-        import android.test.AndroidTestCase;
+import android.net.Uri;
+import android.test.AndroidTestCase;
 
 /*
     Students: This is NOT a complete test for the WeatherContract --- just for the functions

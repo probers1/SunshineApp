@@ -1,15 +1,14 @@
 package net.theroberson.sunshineapp;
 
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.net.Uri;
-import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-
+        import android.content.Intent;
+        import android.content.SharedPreferences;
+        import android.net.Uri;
+        import android.os.Bundle;
+        import android.preference.PreferenceManager;
+        import android.support.v7.app.ActionBarActivity;
+        import android.util.Log;
+        import android.view.Menu;
+        import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -25,7 +24,6 @@ public class MainActivity extends ActionBarActivity {
                     .commit();
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -51,7 +49,6 @@ public class MainActivity extends ActionBarActivity {
             openPreferredLocationInMap();
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -61,6 +58,7 @@ public class MainActivity extends ActionBarActivity {
         String location = sharedPrefs.getString(
                 getString(R.string.pref_location_key),
                 getString(R.string.pref_location_default));
+
         // Using the URI scheme for showing a location found on a map.  This super-handy
         // intent can is detailed in the "Common Intents" page of Android's developer site:
         // http://developer.android.com/guide/components/intents-common.html#Maps
@@ -77,5 +75,4 @@ public class MainActivity extends ActionBarActivity {
             Log.d(LOG_TAG, "Couldn't call " + location + ", no receiving apps installed!");
         }
     }
-
 }
