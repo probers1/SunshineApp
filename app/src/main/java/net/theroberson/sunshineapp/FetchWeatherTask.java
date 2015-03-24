@@ -96,8 +96,9 @@ public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
         long roundedHigh = Math.round(high);
         long roundedLow = Math.round(low);
 
-        String highLowStr = roundedHigh + "/" + roundedLow;
-        return highLowStr;
+        //String highLowStr = roundedHigh + "/" + roundedLow;
+        //return highLowStr;
+        return roundedHigh + "/" + roundedLow;
     }
 
     /**
@@ -328,8 +329,9 @@ public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
 
             Log.d(LOG_TAG, "FetchWeatherTask Complete. " + cVVector.size() + " Inserted");
 
-            String[] resultStrs = convertContentValuesToUXFormat(cVVector);
-            return resultStrs;
+            //String[] resultStrs = convertContentValuesToUXFormat(cVVector);
+            //return resultStrs;
+            return convertContentValuesToUXFormat(cVVector);
 
         } catch (JSONException e) {
             Log.e(LOG_TAG, e.getMessage(), e);
