@@ -15,11 +15,11 @@
  */
 package net.theroberson.sunshineapp;
 
-        import android.annotation.TargetApi;
-        import android.database.Cursor;
-        import android.test.AndroidTestCase;
+import android.annotation.TargetApi;
+import android.database.Cursor;
+import android.test.AndroidTestCase;
 
-        import net.theroberson.sunshineapp.data.WeatherContract;
+import net.theroberson.sunshineapp.data.WeatherContract;
 
 public class TestFetchWeatherTask extends AndroidTestCase{
     static final String ADD_LOCATION_SETTING = "Sunnydale, CA";

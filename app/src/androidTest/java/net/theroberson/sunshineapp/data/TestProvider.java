@@ -15,21 +15,20 @@
  */
 package net.theroberson.sunshineapp.data;
 
+import android.content.ComponentName;
+import android.content.ContentUris;
+import android.content.ContentValues;
+import android.content.pm.PackageManager;
+import android.content.pm.ProviderInfo;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
+import android.os.Build;
+import android.test.AndroidTestCase;
+import android.util.Log;
 
-        import android.content.ComponentName;
-        import android.content.ContentUris;
-        import android.content.ContentValues;
-        import android.content.pm.PackageManager;
-        import android.content.pm.ProviderInfo;
-        import android.database.Cursor;
-        import android.database.sqlite.SQLiteDatabase;
-        import android.net.Uri;
-        import android.os.Build;
-        import android.test.AndroidTestCase;
-        import android.util.Log;
-
-        import net.theroberson.sunshineapp.data.WeatherContract.LocationEntry;
-        import net.theroberson.sunshineapp.data.WeatherContract.WeatherEntry;
+import net.theroberson.sunshineapp.data.WeatherContract.LocationEntry;
+import net.theroberson.sunshineapp.data.WeatherContract.WeatherEntry;
 
 /*
     Note: This is not a complete set of tests of the Sunshine ContentProvider, but it does test
@@ -118,7 +117,7 @@ public class TestProvider extends AndroidTestCase {
 
             // Make sure that the registered authority matches the authority from the Contract.
             assertEquals("Error: WeatherProvider registered with authority: " + providerInfo.authority +
-                            " instead of authority: " + WeatherContract.CONTENT_AUTHORITY,
+                    " instead of authority: " + WeatherContract.CONTENT_AUTHORITY,
                     providerInfo.authority, WeatherContract.CONTENT_AUTHORITY);
         } catch (PackageManager.NameNotFoundException e) {
             // I guess the provider isn't registered correctly.

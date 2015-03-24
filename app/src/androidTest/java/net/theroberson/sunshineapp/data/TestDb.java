@@ -15,12 +15,12 @@
  */
 package net.theroberson.sunshineapp.data;
 
-        import android.content.ContentValues;
-        import android.database.Cursor;
-        import android.database.sqlite.SQLiteDatabase;
-        import android.test.AndroidTestCase;
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.test.AndroidTestCase;
 
-        import java.util.HashSet;
+import java.util.HashSet;
 
 public class TestDb extends AndroidTestCase {
 

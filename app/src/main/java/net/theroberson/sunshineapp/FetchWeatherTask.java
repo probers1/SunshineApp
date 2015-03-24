@@ -15,35 +15,35 @@
  */
 package net.theroberson.sunshineapp;
 
-        import android.content.ContentUris;
-        import android.content.ContentValues;
-        import android.content.Context;
-        import android.content.SharedPreferences;
-        import android.database.Cursor;
-        import android.database.DatabaseUtils;
-        import android.net.Uri;
-        import android.os.AsyncTask;
-        import android.preference.PreferenceManager;
-        import android.text.format.Time;
-        import android.util.Log;
-        import android.widget.ArrayAdapter;
+import android.content.ContentUris;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.DatabaseUtils;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.preference.PreferenceManager;
+import android.text.format.Time;
+import android.util.Log;
+import android.widget.ArrayAdapter;
 
-        import net.theroberson.sunshineapp.data.WeatherContract;
-        import net.theroberson.sunshineapp.data.WeatherContract.WeatherEntry;
+import net.theroberson.sunshineapp.data.WeatherContract;
+import net.theroberson.sunshineapp.data.WeatherContract.WeatherEntry;
 
-        import org.json.JSONArray;
-        import org.json.JSONException;
-        import org.json.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-        import java.io.BufferedReader;
-        import java.io.IOException;
-        import java.io.InputStream;
-        import java.io.InputStreamReader;
-        import java.net.HttpURLConnection;
-        import java.net.URL;
-        import java.text.SimpleDateFormat;
-        import java.util.Date;
-        import java.util.Vector;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Vector;
 
 public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
 
